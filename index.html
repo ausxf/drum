@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Online </title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 id="title">Drum Online 🎶 </h1>
+  <div class="set">
+    <button class="w drum" onclick="drumw()" onmouseover="tikus(this)" onmouseout="tikusjauh(this)">w</button>
+    <button class="a drum" onclick="druma()" onmouseover="tikus(this)" onmouseout="tikusjauh(this)">a</button>
+    <button class="s drum" onclick="drums()" onmouseover="tikus(this)" onmouseout="tikusjauh(this)">s</button>
+    <button class="d drum" onclick="drumd()" onmouseover="tikus(this)" onmouseout="tikusjauh(this)">d</button>
+    <button class="j drum" onclick="drumj()" onmouseover="tikus(this)" onmouseout="tikusjauh(this)">j</button>
+    <button class="k drum" onclick="drumk()" onmouseover="tikus(this)" onmouseout="tikusjauh(this)">k</button>
+    <button class="l drum" onclick="druml()" onmouseover="tikus(this)" onmouseout="tikusjauh(this)">l</button>
+  </div>
+
+  <script>
+    
+    function tikus(x) {
+  x.style.height = "170px";
+  x.style.width = "170px";
+}
+
+function tikusjauh(x) {
+  x.style.height = "150px";
+  x.style.width = "150px";
+}
+
+
+
+function drumw(){
+    var audio = new Audio("./sounds/crash.mp3");
+    audio.play();
+}
+
+function druma(){
+    var audio = new Audio("./sounds/kick-bass.mp3");
+    audio.play();
+}
+function drums(){
+    var audio = new Audio("./sounds/snare.mp3");
+    audio.play();
+}
+function drumd(){
+    var audio = new Audio("./sounds/tom-1.mp3");
+    audio.play();
+}
+function drumj(){
+    var audio = new Audio("./sounds/tom-2.mp3");
+    audio.play();
+}
+function drumk(){
+    var audio = new Audio("./sounds/tom-3.mp3");
+    audio.play();
+}
+
+function druml(){
+    var audio = new Audio("./sounds/tom-4.mp3");
+    audio.play();
+}
+  </script>
+<footer>
+  aus july 2024
+</footer>
+
+</body>
+
+</html>
